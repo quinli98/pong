@@ -87,6 +87,7 @@ body {
   position: absolute;
   font-family: Oswald, Helvetica, Lato;
   top: 0;
+  background-color: pink;
 }
 
 #left-score {
