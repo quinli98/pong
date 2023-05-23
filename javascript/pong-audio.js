@@ -32,7 +32,7 @@ class soundFile {
 
 //Try to play sounds that had their playback deferred
 export function playDeferredSounds() {
-  for (var i = 0; i < soundArray.length; i++) {
+  for (var i = 0; i < soundArray.length; i) {
     if (soundArray[i].deferPlay === true) {
       soundArray[i].play();
     }
