@@ -195,7 +195,7 @@ function updateBall() {
         ballHitWall.turnOn();
       }
       ball.position.x = game.size.x - game.padding.x;
-      ball.direction.x = ball.initial.x * 0; //reset ball speed
+      ball.direction.x = ball.initial.x * 1; //reset ball speed
       ball.direction.y = ball.initial.y;
     } else {
       ballHitPaddle.turnOn();
