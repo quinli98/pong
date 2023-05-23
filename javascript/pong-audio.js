@@ -9,8 +9,8 @@ class soundFile {
     //this.deferPlay = false;
     this.player = new Tone.Player({
       url: "./sounds/" + file,
-      loop: false,
-      autostart: false
+      loop: true,
+      autostart: true
     }).toMaster();
   }
   //Play function also with pre-stop and deferred playing
@@ -43,16 +43,16 @@ export var soundArray = []; //list of sounds loaded
 
 //Here is where all the Sound File Players Start
 
-export var wallSound = new soundFile("wall.mp3"); //load sound
+export var wallSound = new soundFile("sounds_silence.mp3"); //load sound
 soundArray.push(wallSound); //add sound to list of sounds
 
-export var paddleSound = new soundFile("paddle.mp3");
+export var paddleSound = new soundFile("sounds_silence.mp3");
 soundArray.push(paddleSound);
 
 export var scoreSound = new soundFile("silence.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("ambient.mp3");
+export var ambientSound = new soundFile("Late-at-Night.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
